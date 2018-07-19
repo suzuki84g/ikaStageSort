@@ -10,6 +10,8 @@ const rule = jsonData.result[0].rule
 const map0 = jsonData.result[0].maps[0]
 const map1 = jsonData.result[0].maps[1]
 
+const startParse = start.replace(/\d{4}-\d{2}-\d{2}[T](\d{2}:\d{2}):\d{2}/ , '$1' )
+
 /*
 document.write(start)
 document.write(rule)
@@ -22,7 +24,7 @@ const gachi = document.getElementById("rule")
 const stage_a = document.getElementById("stage_a")
 const stage_b = document.getElementById("stage_b")
 
-now.innerHTML = start
+now.innerHTML = startParse
 gachi.innerHTML = rule
 stage_a.innerHTML = map0
 stage_b.innerHTML = map1
