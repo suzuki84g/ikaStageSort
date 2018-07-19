@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./static/bootstrap-4.1.2-dist/css/bootstrap.min.css"/>
+        <title>イカステージソート</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>イカステージ</h1>
+        </div>
+        <div class="container">
+            <script type="text/javascript" src="./src/date.js"></script>
+            <div id="table"></div>
+            <table class="table">
+                <thead>
+                    <th>時間</th>
+                    <th>ルール</th>
+                    <th>ステージA</th>
+                    <th>ステージB</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="now"></th>
+                        <th id="rule"></th>
+                        <th id="stage_a"></th>
+                        <th id="stage_b"></th>
+                        <script type="text/javascript" src="./src/jsonGet.js"></script>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
