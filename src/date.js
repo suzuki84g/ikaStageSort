@@ -12,5 +12,6 @@ const time = date.getDate();
 //日付作成
 const print = year+'/'+month+'/'+day+' '+hour+':'+minute+':'+second+' '
 
+//一筆書く
 const pri = document.getElementById("sentence")
-pri.innerHTML = print+"に取得したステージ情報です。"
+pri.innerHTML = print+"に取得したリーグマッチのステージ情報です。"
