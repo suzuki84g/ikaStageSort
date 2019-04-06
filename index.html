@@ -2,95 +2,91 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Bootstrap４に必要なCSSとJavaScriptを読み込み-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <title>イカステージソート</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap４に必要なCSSとJavaScriptを読み込み-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <title>イカステージソート</title>
 </head>
 
 <body>
-    <div class="jumbotron">
-        <h1>イカステージ</h1>
+  <div class="jumbotron">
+   <h1>イカステージ</h1>
+  </div>
+
+  <div class="container">
+    <!-- ここで時刻を読み取る -->
+    <div id="sentence">
     </div>
 
-    <div class="container">
-        <!-- ここで時刻を読み取る(表記がイケてない) -->
-        <p id="sentence">test</p>
+    <!-- タブ関連 -->
+    <div>
+      <!-- タブ一覧 -->
+      <ul class="nav nav-tabs">
+          <li class="nav-item">
+              <a href="#tab1" class="nav-link active" data-toggle="tab">レギュラー</a>
+          </li>
+          <li class="nav-item">
+              <a href="#tab2" class="nav-link" data-toggle="tab">ガチマッチ</a>
+          </li>
+          <li class="nav-item">
+              <a href="#tab3" class="nav-link" data-toggle="tab">リーグマッチ</a>
+          </li>
+          <li class="nav-item">
+              <a href="#tab4" class="nav-link" data-toggle="tab">サーモンラン</a>
+          </li>
+      </ul>
 
-        <!-- タブ一覧 -->
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a href="#tab1" class="nav-link active" data-toggle="tab">レギュラー</a>
-            </li>
-            <li class="nav-item">
-                <a href="#tab2" class="nav-link" data-toggle="tab">ガチマッチ</a>
-            </li>
-            <li class="nav-item">
-                <a href="#tab3" class="nav-link" data-toggle="tab">リーグマッチ</a>
-            </li>
-            <li class="nav-item">
-                <a href="#tab4" class="nav-link" data-toggle="tab">サーモンラン</a>
-            </li>
-        </ul>
-
-        <!-- タブ内容の記載 -->
-        <div class="tab-contents">
-            <div id="tab1" class="tab-pane active">
-                <!-- レギュラーあとでつくる -->
-                <p>れぎゅらー</p>
-            </div>
+      <!-- タブ内容の記載 -->
+      <div class="tab-content">
+        <div id="tab1" class="tab-pane active">
+          <!-- レギュラーあとでつくる -->
+          <p>れぎゅらー</p>
         </div>
-
-        <div class="tab-contents">
-            <div id="tab2" class="tab-pane">
-                <!-- ガチマあとでつくる -->
-                <p>がちま</p>
-            </div>
+        <div id="tab2" class="tab-pane">
+          <!-- ガチマあとでつくる -->
+          <p>がちま</p>
         </div>
-        
-        <div class="tab-contents">
-            <div id="tab3" class="tab-pane">
-                <!-- リグマあとでつくる -->
-                <p>リグマ</p>
-            </div>
+        <div id="tab3" class="tab-pane">
+          <!-- リグマあとでつくる -->
+          <p>リグマ</p>
         </div>
-
-        <div class="tab-contents">
-            <div id="tab4" class="tab-pane">
-                <!-- サーモンランをあとでつくる -->
-                <p>しゃけ</p>
-            </div>
+        <div id="tab4" class="tab-pane">
+          <!-- サーモンランをあとでつくる -->
+          <p>しゃけ</p>
         </div>
+      </div>
+    </div>
 
+    <!-- 一旦据え置きの表 -->
+    <div>
+    <!-- テーブル表記 -->
+      <table class="table table-sm">
+              <thead>
+                  <th>時間</th>
+                  <th>ルール</th>
+                  <th>ステージA</th>
+                  <th>ステージB</th>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th id="now"></th>
+                      <th id="rule"></th>
+                      <th id="stage_a"></th>
+                      <th id="stage_b"></th>
+                  </tr>
+              </tbody>
+      </table>
+    </div>
 
+  </div>
 
-        <!-- テーブル表記 -->
-            <table class="table table-sm">
-                <thead>
-                    <th>時間</th>
-                    <th>ルール</th>
-                    <th>ステージA</th>
-                    <th>ステージB</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th id="now"></th>
-                        <th id="rule"></th>
-                        <th id="stage_a"></th>
-                        <th id="stage_b"></th>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+  <!-- js読み込み -->
+  <script type="text/javascript" src="./src/date.js"></script>
+  <script type="text/javascript" src="./src/jsonGet.js"></script>
 
-
-        <!-- js読み込み -->
-        <script type="text/javascript" src="./src/date.js"></script>
-        <script type="text/javascript" src="./src/jsonGet.js"></script>
-
-    </body>
+</body>
 </html>
