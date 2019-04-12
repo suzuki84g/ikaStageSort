@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,84 +10,125 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <title>イカステージソート</title>
+  <title>イカステージ</title>
 </head>
 
+
 <body>
-  <div class="jumbotron">
-   <h1>イカステージ</h1>
-  </div>
 
-  <div class="container">
-    <!-- ここで時刻を読み取る -->
-    <div id="sentence">
-    </div>
-
-    <!-- タブ関連 -->
-    <div>
-      <!-- タブ一覧 -->
-      <ul class="nav nav-tabs">
-          <li class="nav-item">
-              <a href="#tab1" class="nav-link active" data-toggle="tab">レギュラー</a>
-          </li>
-          <li class="nav-item">
-              <a href="#tab2" class="nav-link" data-toggle="tab">ガチマッチ</a>
-          </li>
-          <li class="nav-item">
-              <a href="#tab3" class="nav-link" data-toggle="tab">リーグマッチ</a>
-          </li>
-          <li class="nav-item">
-              <a href="#tab4" class="nav-link" data-toggle="tab">サーモンラン</a>
-          </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">イカステージ</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">バトル<span class="sr-only">(現位置)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">サーモンラン</a>
+        </li>
       </ul>
+      <span class="navbar-text ml-auto" id="sentence">
+        <!-- 取得時刻を表示 -->
+      </span>
+    </div>
+  </nav>
 
-      <!-- タブ内容の記載 -->
-      <div class="tab-content">
-        <div id="tab1" class="tab-pane active">
-          <!-- レギュラーあとでつくる -->
-          <p>れぎゅらー</p>
-        </div>
-        <div id="tab2" class="tab-pane">
-          <!-- ガチマあとでつくる -->
-          <p>がちま</p>
-        </div>
-        <div id="tab3" class="tab-pane">
-          <!-- リグマあとでつくる -->
-          <p>リグマ</p>
-        </div>
-        <div id="tab4" class="tab-pane">
-          <!-- サーモンランをあとでつくる -->
-          <p>しゃけ</p>
+  <main>
+    <div class="container">
+
+      <!-- テーブル00 -->
+      <div class="row p-3">
+        <h5>
+          <span id="startTime_00">開始時間</span>〜<span id="endTime_00">終了時間</span>
+        </h5>  
+        <div class="table-responsive">
+         <table class="table table-bordered table-sm">
+          <caption class="sr-only"></caption>
+          <thead class="thead-light text-center">
+            <tr>
+              <th width="100"><span>ナワバリ</span></th>
+              <th width="100"><span id="gachi_00">ガチルール</span></th>
+              <th width="100"><span id="league_00">リグマルール</span></th>
+              </tr>
+          </thead>
+          <tbody class="text-sm-center">
+            <tr>
+              <td width="100"><span id="rSt_00">ナワバリステ0</span></td>
+              <td width="100"><span id="gSt_00">ガチステージ0</span></td>
+              <td width="100"><span id="lSt_00">リグマステージ0</span></td>
+            </tr>
+            <tr>
+              <td width="100"><span id="rSt_01">ナワバリステ1</span></td>
+              <td width="100"><span id="gSt_01">ガチステージ1</span></td>
+              <td width="100"><span id="lSt_01">リグマステージ1</span></td>
+            </tr>
+          </tbody>
+        </table>
         </div>
       </div>
-    </div>
+      
+      <!-- テーブル01 -->
+      <div class="row p-3">
+        <h5>
+          <span id="startTime_10">開始時間</span>〜<span id="endTime_10">終了時間</span>
+        </h5>  
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm">
+            <caption class="sr-only"></caption>
+              <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span>ナワバリ</span></th>
+                <th width="100"><span id="gachi_10">ガチルール</span></th>
+                <th width="100"><span id="league_10">リグマルール</span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+                <td width="100"><span id="rSt_10">ナワバリステ0</span></td>
+                <td width="100"><span id="gSt_10">ガチステージ0</span></td>
+                <td width="100"><span id="lSt_10">リグマステージ0</span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_11">ナワバリステ1</span></td>
+                <td width="100"><span id="gSt_11">ガチステージ1</span></td>
+                <td width="100"><span id="lSt_11">リグマステージ1</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-    <!-- 一旦据え置きの表 -->
-    <div>
-    <!-- テーブル表記 -->
-      <table class="table table-sm">
-              <thead>
-                  <th>時間</th>
-                  <th>ルール</th>
-                  <th>ステージA</th>
-                  <th>ステージB</th>
-              </thead>
-              <tbody>
-                  <tr>
-                      <th id="now"></th>
-                      <th id="rule"></th>
-                      <th id="stage_a"></th>
-                      <th id="stage_b"></th>
-                  </tr>
-              </tbody>
-      </table>
-    </div>
 
-  </div>
+
+
+
+
+
+      <div class="row p-3">
+        <div class="col-4">
+          てすてすてすてすてすてすてすつてすつてすてすてすてすてすてすてすつてすつ
+        </div>
+        <div class="col-4">
+          てすてすてすてすてすてすてすつてすつてすてすてすてすてすてすてすつてすつ
+        </div>
+        <div class="col-4">
+          てすてすてすてすてすてすてすつてすつてすてすてすてすてすてすてすつてすつ
+        </div>
+      </div>
+      
+    </div>  <!-- ContainerEnd -->
+  </main>
+
 
   <!-- js読み込み -->
   <script type="text/javascript" src="./src/date.js"></script>
-  <script type="text/javascript" src="./src/jsonGet.js"></script>
+  <script type="text/javascript" src="./src/jsonGetAll.js"></script>
+<!-- テスト中はコメントアウト
+  <script type="text/javascript" src="./src/jsonSalmonGet.js"></script>
+ -->
 
 </body>
 </html>

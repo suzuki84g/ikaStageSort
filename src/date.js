@@ -14,4 +14,4 @@ const print = year+'/'+month+'/'+day+' '+hour+':'+minute+':'+second+' '
 
 //一筆書く
 const pri = document.getElementById("sentence")
-pri.innerHTML = print+"に取得したリーグマッチのステージ情報です。"
+pri.innerHTML = print+"に取得"
