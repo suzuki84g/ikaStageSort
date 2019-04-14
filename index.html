@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ja">
 
 
+=======
+
+<!DOCTYPE html>
+<html lang="ja">
+
+>>>>>>> 前面改版
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +20,10 @@
   <title>イカステージ</title>
 </head>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 前面改版
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,18 +37,26 @@
           <a class="nav-link" href="#">バトル<span class="sr-only">(現位置)</span></a>
         </li>
         <li class="nav-item">
+<<<<<<< HEAD
           <a class="nav-link" href="#">サーモンラン</a>
         </li>
       </ul>
       <span class="navbar-text ml-auto" id="sentence">
         <!-- 取得時刻を表示 -->
       </span>
+=======
+          <a class="nav-link" href="#">サーモンラン<span class="sr-only">(未実装だよ！)</span></a>
+        </li>
+      </ul>
+      <!-- <span class="navbar-text ml-auto" id="sentence"></span>取得時刻を表示は文中に移動 -->
+>>>>>>> 前面改版
     </div>
   </nav>
 
   <main>
     <div class="container">
 
+<<<<<<< HEAD
       <!-- テーブル00 -->
       <div class="row p-3">
         <h5>
@@ -83,10 +101,76 @@
                 <th width="100"><span>ナワバリ</span></th>
                 <th width="100"><span id="gachi_10">ガチルール</span></th>
                 <th width="100"><span id="league_10">リグマルール</span></th>
+=======
+      <!-- ヘッダー表示 -->
+      <div class="row px-3 pt-4">
+        <h5>
+          <span id="sentence"></span><!-- 取得時刻を表示 -->
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_png">レギュラー</span></th>
+                <th width="100"><span id="gachi_png">ガチマッチ</span></th>
+                <th width="100"><span id="league_png">リーグマッチ</span></th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+
+      <!-- テーブル00 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_0"></span>〜<span id="endTime_0"></span><span class="lead"> ←Now!!</span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_0"></span></th>
+                <th width="100"><span id="gachi_0"></span></th>
+                <th width="100"><span id="league_0"></span></th>
               </tr>
             </thead>
             <tbody class="text-sm-center">
               <tr>
+                <td width="100"><span id="rSt_0_0"></span></td>
+                <td width="100"><span id="gSt_0_0"></span></td>
+                <td width="100"><span id="lSt_0_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_0_1"></span></td>
+                <td width="100"><span id="gSt_0_1"></span></td>
+                <td width="100"><span id="lSt_0_1"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  <!-- テーブル01 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_1"></span>〜<span id="endTime_1"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_1"></span></th>
+                <th width="100"><span id="gachi_1"></span></th>
+                <th width="100"><span id="league_1"></span></th>
+>>>>>>> 前面改版
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+<<<<<<< HEAD
                 <td width="100"><span id="rSt_10">ナワバリステ0</span></td>
                 <td width="100"><span id="gSt_10">ガチステージ0</span></td>
                 <td width="100"><span id="lSt_10">リグマステージ0</span></td>
@@ -96,11 +180,54 @@
                 <td width="100"><span id="gSt_11">ガチステージ1</span></td>
                 <td width="100"><span id="lSt_11">リグマステージ1</span></td>
               </tr>
+=======
+              <td width="100"><span id="rSt_1_0"></span></td>
+              <td width="100"><span id="gSt_1_0"></span></td>
+              <td width="100"><span id="lSt_1_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_1_1"></span></td>
+                <td width="100"><span id="gSt_1_1"></span></td>
+                <td width="100"><span id="lSt_1_1"></span></td>
+            </tr>
             </tbody>
           </table>
         </div>
       </div>
 
+  <!-- テーブル02 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_2"></span>〜<span id="endTime_2"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_2"></span></th>
+                <th width="100"><span id="gachi_2"></span></th>
+                <th width="100"><span id="league_2"></span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+              <td width="100"><span id="rSt_2_0"></span></td>
+              <td width="100"><span id="gSt_2_0"></span></td>
+              <td width="100"><span id="lSt_2_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_2_1"></span></td>
+                <td width="100"><span id="gSt_2_1"></span></td>
+                <td width="100"><span id="lSt_2_1"></span></td>
+            </tr>
+>>>>>>> 前面改版
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+<<<<<<< HEAD
 
 
 
@@ -131,4 +258,294 @@
  -->
 
 </body>
+=======
+  <!-- テーブル03 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_3"></span>〜<span id="endTime_3"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_3"></span></th>
+                <th width="100"><span id="gachi_3"></span></th>
+                <th width="100"><span id="league_3"></span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+              <td width="100"><span id="rSt_3_0"></span></td>
+              <td width="100"><span id="gSt_3_0"></span></td>
+              <td width="100"><span id="lSt_3_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_3_1"></span></td>
+                <td width="100"><span id="gSt_3_1"></span></td>
+                <td width="100"><span id="lSt_3_1"></span></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  <!-- テーブル04 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_4"></span>〜<span id="endTime_4"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_4"></span></th>
+                <th width="100"><span id="gachi_4"></span></th>
+                <th width="100"><span id="league_4"></span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+              <td width="100"><span id="rSt_4_0"></span></td>
+              <td width="100"><span id="gSt_4_0"></span></td>
+              <td width="100"><span id="lSt_4_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_4_1"></span></td>
+                <td width="100"><span id="gSt_4_1"></span></td>
+                <td width="100"><span id="lSt_4_1"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  <!-- テーブル05 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_5"></span>〜<span id="endTime_5"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_5"></span></th>
+                <th width="100"><span id="gachi_5"></span></th>
+                <th width="100"><span id="league_5"></span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+              <td width="100"><span id="rSt_5_0"></span></td>
+              <td width="100"><span id="gSt_5_0"></span></td>
+              <td width="100"><span id="lSt_5_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_5_1"></span></td>
+                <td width="100"><span id="gSt_5_1"></span></td>
+                <td width="100"><span id="lSt_5_1"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  <!-- テーブル06 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_6"></span>〜<span id="endTime_6"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_6"></span></th>
+                <th width="100"><span id="gachi_6"></span></th>
+                <th width="100"><span id="league_6"></span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+              <td width="100"><span id="rSt_6_0"></span></td>
+              <td width="100"><span id="gSt_6_0"></span></td>
+              <td width="100"><span id="lSt_6_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_6_1"></span></td>
+                <td width="100"><span id="gSt_6_1"></span></td>
+                <td width="100"><span id="lSt_6_1"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  <!-- テーブル07 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_7"></span>〜<span id="endTime_7"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_7"></span></th>
+                <th width="100"><span id="gachi_7"></span></th>
+                <th width="100"><span id="league_7"></span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+              <td width="100"><span id="rSt_7_0"></span></td>
+              <td width="100"><span id="gSt_7_0"></span></td>
+              <td width="100"><span id="lSt_7_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_7_1"></span></td>
+                <td width="100"><span id="gSt_7_1"></span></td>
+                <td width="100"><span id="lSt_7_1"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  <!-- テーブル08 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_8"></span>〜<span id="endTime_8"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_8"></span></th>
+                <th width="100"><span id="gachi_8"></span></th>
+                <th width="100"><span id="league_8"></span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+              <td width="100"><span id="rSt_8_0"></span></td>
+              <td width="100"><span id="gSt_8_0"></span></td>
+              <td width="100"><span id="lSt_8_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_8_1"></span></td>
+                <td width="100"><span id="gSt_8_1"></span></td>
+                <td width="100"><span id="lSt_8_1"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  <!-- テーブル09 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_9"></span>〜<span id="endTime_9"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_9"></span></th>
+                <th width="100"><span id="gachi_9"></span></th>
+                <th width="100"><span id="league_9"></span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+              <td width="100"><span id="rSt_9_0"></span></td>
+              <td width="100"><span id="gSt_9_0"></span></td>
+              <td width="100"><span id="lSt_9_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_9_1"></span></td>
+                <td width="100"><span id="gSt_9_1"></span></td>
+                <td width="100"><span id="lSt_9_1"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  <!-- テーブル10 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_10"></span>〜<span id="endTime_10"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_10"></span></th>
+                <th width="100"><span id="gachi_10"></span></th>
+                <th width="100"><span id="league_10"></span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+              <td width="100"><span id="rSt_10_0"></span></td>
+              <td width="100"><span id="gSt_10_0"></span></td>
+              <td width="100"><span id="lSt_10_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_10_1"></span></td>
+                <td width="100"><span id="gSt_10_1"></span></td>
+                <td width="100"><span id="lSt_10_1"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  <!-- テーブル11 -->
+      <div class="row px-3 pt-3">
+        <h5>
+          <span id="startTime_11"></span>〜<span id="endTime_11"></span>
+        </h5>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm table-condensed">
+            <caption class="sr-only"></caption>
+            <thead class="thead-light text-center">
+              <tr>
+                <th width="100"><span id="regular_11"></span></th>
+                <th width="100"><span id="gachi_11"></span></th>
+                <th width="100"><span id="league_11"></span></th>
+              </tr>
+            </thead>
+            <tbody class="text-sm-center">
+              <tr>
+              <td width="100"><span id="rSt_11_0"></span></td>
+              <td width="100"><span id="gSt_11_0"></span></td>
+              <td width="100"><span id="lSt_11_0"></span></td>
+              </tr>
+              <tr>
+                <td width="100"><span id="rSt_11_1"></span></td>
+                <td width="100"><span id="gSt_11_1"></span></td>
+                <td width="100"><span id="lSt_11_1"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div> <!-- container_end  -->
+  </main>
+
+  <!-- js読み込み -->
+  <script type="text/javascript" src="./src/date.js"></script>
+  <script type="text/javascript" src="./src/index.js"></script>
+
+</body>
+
+>>>>>>> 前面改版
 </html>
