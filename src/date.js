@@ -13,4 +13,4 @@ const second = ("0"+date.getSeconds()).slice(-2)
 const print = year+'年'+month+'月'+day+'日 '+hour+':'+minute+':'+second
 
 //一筆書く
-document.getElementById('sentence').insertAdjacentHTML('afterbegin', '取得した時間→'+print)
+document.getElementById('sentence').insertAdjacentHTML('afterbegin', print)
