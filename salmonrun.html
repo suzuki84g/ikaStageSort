@@ -18,74 +18,109 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">イカステージ</a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">バトル</a>
+          <a class="nav-link" href="index.html">バトル</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">サーモンラン<span class="sr-only">(現位置)</span></a>
         </li>
       </ul>
-      <span class="navbar-text ml-auto" id="sentence">
-        <!-- 取得時刻を表示 -->
-      </span>
     </div>
   </nav>
 
   <main>
     <div class="container">
 
-      <div class="row p-3">
-        <div class="col-12">
-          <h5>#1 開催中or次回 / 残り時間or何時間後</h5>
+      <div class="row px-3 pt-4">
+        <h6>
+          <span>取得した時間：</span><span id="sentence"></span><!-- 取得時刻を表示 -->
+        </h6>
+      </div>
+
+      <!-- #1 -->
+      <div class="row px-3 pt-3">
+        <div class="col-12 px-1">
+          <h5>#1 <span id="nowOrNext"></span><span id="time_0" class="sr-only">残り時間出したい人生だった</span></h5>
         </div>
-        <div class="col-12">
-          <span>開始時間〜終了時間</span>
+        <div class="col-12 px-1">
+          <span id="startTime_0"></span> 〜 <span id="endTime_0"></span>
         </div> 
-        <div class="col-12">
-          <span>ステージ：ここだよ</span>
+        <div class="col-12 px-1 pb-1">
+          <span>ステージ：</span><span id="coop_0"></span>
         </div>
-        <div class="col-3">
-          <span>ブキ1</span>
+        <div class="col-sm-3 col-md-6 px-2">
+          <span id="buki_0_0"></span>
         </div>
-        <div class="col-3">
-          <span>ブキ2</span>
+        <div class="col-sm-3 col-md-6 px-2">
+          <span id="buki_0_1"></span>
         </div>
-        <div class="col-3">
-          <span>ブキ3</span>
+        <div class="col-sm-3 col-md-6 px-2">
+          <span id="buki_0_2"></span>
         </div>
-        <div class="col-3">
-          <span>ブキ4</span>
+        <div class="col-sm-3 col-md-6 px-2">
+          <span id="buki_0_3"></span>
         </div>
       </div>
 
-      <div class="row p-3">
-          <div class="col-12">
-            <h5>#2 開催中or次回 / 残り時間or何時間後</h5>
-          </div>
-          <div class="col-12">
-            <span>開始時間〜終了時間</span>
-          </div> 
-          <div class="col-12">
-            <span>ステージ：ここだよ</span>
-          </div>
-          <div class="col-3">
-            <span>ブキ1</span>
-          </div>
-          <div class="col-3">
-            <span>ブキ2</span>
-          </div>
-          <div class="col-3">
-            <span>ブキ3</span>
-          </div>
-          <div class="col-3">
-            <span>ブキ4</span>
-          </div>
+      <!-- #2 -->
+      <div class="row px-3 pt-3">
+        <div class="col-12 px-1">
+          <h5>#2 <span id="time_1" class="sr-only">残り時間出したい人生だった</span></h5>
         </div>
+        <div class="col-12 px-1">
+          <span id="startTime_1"></span> 〜 <span id="endTime_1"></span>
+        </div> 
+        <div class="col-12 px-1 pb-1">
+          <span>ステージ：</span><span id="coop_1"></span>
+        </div>
+        <div class="col-sm-3 col-md-6 px-2">
+          <span id="buki_1_0"></span>
+        </div>
+        <div class="col-sm-3 col-md-6 px-2">
+          <span id="buki_1_1"></span>
+        </div>
+        <div class="col-sm-3 col-md-6 px-2">
+          <span id="buki_1_2"></span>
+        </div>
+        <div class="col-sm-3 col-md-6 px-2">
+          <span id="buki_1_3"></span>
+        </div>
+      </div>
+
+      <!-- #3 -->
+      <div class="row px-3 pt-3">
+        <div class="col-12 px-1">
+          <h5>#3 <span id="time_2" class="sr-only">残り時間出したい人生だった</span></h5>
+        </div>
+        <div class="col-12 px-1">
+          <span id="startTime_2"></span> 〜 <span id="endTime_2"></span>
+        </div> 
+      </div>
+
+      <!-- #4 -->
+      <div class="row px-3 pt-3">
+        <div class="col-12 px-1">
+          <h5>#4 <span id="time_3" class="sr-only">残り時間出したい人生だった</span></h5>
+        </div>
+        <div class="col-12 px-1">
+          <span id="startTime_3"></span> 〜 <span id="endTime_3"></span>
+        </div> 
+      </div>
+
+      <!-- #5 -->
+      <div class="row px-3 pt-3">
+        <div class="col-12 px-1">
+          <h5>#5 <span id="time_4" class="sr-only">残り時間出したい人生だった</span></h5>
+        </div>
+        <div class="col-12 px-1">
+          <span id="startTime_4"></span> 〜 <span id="endTime_4"></span>
+        </div> 
+      </div>
 
     </div>  <!-- ContainerEnd -->
   </main>
@@ -93,10 +128,8 @@
 
   <!-- js読み込み -->
   <script type="text/javascript" src="./src/date.js"></script>
-<!-- テスト中はコメントアウト
-  <script type="text/javascript" src="./src/jsonGet.js"></script>
-  <script type="text/javascript" src="./src/jsonSalmonGet.js"></script>
- -->
+  <script type="text/javascript" src="./src/salmonrun.js"></script>
+
 
 </body>
 </html>

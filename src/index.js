@@ -43,7 +43,7 @@ for ( let n =0; n < stage_count; n++ ){
 }
 console.log('gachi_List[0] は ' + gachi_List[0])  //確認用
 
-// 時間以外をinsertAdjacentHTMLする
+// insertAdjacentHTMLする
 for ( let n = 0; n < stage_count; n++) {
   document.getElementById(startTime_List[n]).insertAdjacentHTML('afterbegin', regularJson[n].start.slice(11,16))  //開始時間を切り出し
   document.getElementById(endTime_List[n]).insertAdjacentHTML('afterbegin', regularJson[n].end.slice(11,16))  //終了時間を切り出し

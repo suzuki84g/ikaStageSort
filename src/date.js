@@ -10,7 +10,7 @@ const second = ("0"+date.getSeconds()).slice(-2)
 
 
 //日付作成
-const print = year+'年'+month+'月'+day+'日 '+hour+':'+minute+':'+second
+const print = year+'年'+month+'月'+day+'日 '+hour+'時'+minute+'分'
 
 //一筆書く
 document.getElementById('sentence').insertAdjacentHTML('afterbegin', print)
