@@ -41,7 +41,7 @@ for ( let n = 0; n < time_count; n++){
     +coopJson.result[n].start.substr(8, 2)  //日
     +' '
     +('0'+coopJson.result[n].start.substr(11, 2)).slice(-2)+':00'  //時間
-    +'('+'日月火水木金土'[new Date(coopJson.result[n].start).getDay()]+')'  //曜日
+    +'('+'日月火水木金土'[new Date(coopJson.result[n].start+'+09:00').getDay()]+')'  //曜日
   )
 }
 for ( let n = 0; n < time_count; n++){
@@ -51,16 +51,15 @@ for ( let n = 0; n < time_count; n++){
     +coopJson.result[n].end.substr(8, 2)  //日
     +' '
     +('0'+coopJson.result[n].end.substr(11, 2)).slice(-2)+':00'  //時間
-    +'('+'日月火水木金土'[new Date(coopJson.result[n].end).getDay()]+')'  //曜日
+    +'('+'日月火水木金土'[new Date(coopJson.result[n].end+'+09:00').getDay()]+')'  //曜日
   )
 }
-console.log(coopJson.result[0].start)
-console.log(startStamp_List)
-
 
 // 開催判定
 const nowDate = new Date()
-const startDate = new Date(coopJson.result[0].start)  
+const startDate = new Date(coopJson.result[0].start+'+09:00')
+console.log(nowDate)
+console.log(startDate)
 if(nowDate < startDate){  //今の時間がテーブル1の時間より小さい
   document.getElementById('nowOrNext').insertAdjacentHTML('afterbegin', '次回の予定')  //開催判定
   }else{  //今の時間がテーブル1の時間より大きい
