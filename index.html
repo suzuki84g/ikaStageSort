@@ -1,24 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="splatoon2,スプラトゥーン2">
+  <meta name="description" content="splatoon2のステージ情報を表示します。">
   <!--Bootstrap４に必要なCSSとJavaScriptを読み込み-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
   <title>イカステージ</title>
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">イカステージ</a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
-        <span class="navbar-toggler-icon"></span>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
@@ -32,7 +40,6 @@
       <!-- <span class="navbar-text ml-auto" id="sentence"></span>取得時刻を表示は文中に移動 -->
     </div>
   </nav>
-
   <main>
     <div class="container">
 
@@ -86,7 +93,7 @@
         </div>
       </div>
 
-  <!-- テーブル01 -->
+      <!-- テーブル01 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_1"></span>〜<span id="endTime_1"></span>
@@ -103,21 +110,21 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_1_0"></span></td>
-              <td width="100"><span id="gSt_1_0"></span></td>
-              <td width="100"><span id="lSt_1_0"></span></td>
+                <td width="100"><span id="rSt_1_0"></span></td>
+                <td width="100"><span id="gSt_1_0"></span></td>
+                <td width="100"><span id="lSt_1_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_1_1"></span></td>
                 <td width="100"><span id="gSt_1_1"></span></td>
                 <td width="100"><span id="lSt_1_1"></span></td>
-            </tr>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-  <!-- テーブル02 -->
+      <!-- テーブル02 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_2"></span>〜<span id="endTime_2"></span>
@@ -134,21 +141,21 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_2_0"></span></td>
-              <td width="100"><span id="gSt_2_0"></span></td>
-              <td width="100"><span id="lSt_2_0"></span></td>
+                <td width="100"><span id="rSt_2_0"></span></td>
+                <td width="100"><span id="gSt_2_0"></span></td>
+                <td width="100"><span id="lSt_2_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_2_1"></span></td>
                 <td width="100"><span id="gSt_2_1"></span></td>
                 <td width="100"><span id="lSt_2_1"></span></td>
-            </tr>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-  <!-- テーブル03 -->
+      <!-- テーブル03 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_3"></span>〜<span id="endTime_3"></span>
@@ -165,21 +172,21 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_3_0"></span></td>
-              <td width="100"><span id="gSt_3_0"></span></td>
-              <td width="100"><span id="lSt_3_0"></span></td>
+                <td width="100"><span id="rSt_3_0"></span></td>
+                <td width="100"><span id="gSt_3_0"></span></td>
+                <td width="100"><span id="lSt_3_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_3_1"></span></td>
                 <td width="100"><span id="gSt_3_1"></span></td>
                 <td width="100"><span id="lSt_3_1"></span></td>
-            </tr>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-  <!-- テーブル04 -->
+      <!-- テーブル04 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_4"></span>〜<span id="endTime_4"></span>
@@ -196,9 +203,9 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_4_0"></span></td>
-              <td width="100"><span id="gSt_4_0"></span></td>
-              <td width="100"><span id="lSt_4_0"></span></td>
+                <td width="100"><span id="rSt_4_0"></span></td>
+                <td width="100"><span id="gSt_4_0"></span></td>
+                <td width="100"><span id="lSt_4_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_4_1"></span></td>
@@ -210,7 +217,7 @@
         </div>
       </div>
 
-  <!-- テーブル05 -->
+      <!-- テーブル05 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_5"></span>〜<span id="endTime_5"></span>
@@ -227,9 +234,9 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_5_0"></span></td>
-              <td width="100"><span id="gSt_5_0"></span></td>
-              <td width="100"><span id="lSt_5_0"></span></td>
+                <td width="100"><span id="rSt_5_0"></span></td>
+                <td width="100"><span id="gSt_5_0"></span></td>
+                <td width="100"><span id="lSt_5_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_5_1"></span></td>
@@ -241,7 +248,7 @@
         </div>
       </div>
 
-  <!-- テーブル06 -->
+      <!-- テーブル06 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_6"></span>〜<span id="endTime_6"></span>
@@ -258,9 +265,9 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_6_0"></span></td>
-              <td width="100"><span id="gSt_6_0"></span></td>
-              <td width="100"><span id="lSt_6_0"></span></td>
+                <td width="100"><span id="rSt_6_0"></span></td>
+                <td width="100"><span id="gSt_6_0"></span></td>
+                <td width="100"><span id="lSt_6_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_6_1"></span></td>
@@ -272,7 +279,7 @@
         </div>
       </div>
 
-  <!-- テーブル07 -->
+      <!-- テーブル07 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_7"></span>〜<span id="endTime_7"></span>
@@ -289,9 +296,9 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_7_0"></span></td>
-              <td width="100"><span id="gSt_7_0"></span></td>
-              <td width="100"><span id="lSt_7_0"></span></td>
+                <td width="100"><span id="rSt_7_0"></span></td>
+                <td width="100"><span id="gSt_7_0"></span></td>
+                <td width="100"><span id="lSt_7_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_7_1"></span></td>
@@ -303,7 +310,7 @@
         </div>
       </div>
 
-  <!-- テーブル08 -->
+      <!-- テーブル08 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_8"></span>〜<span id="endTime_8"></span>
@@ -320,9 +327,9 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_8_0"></span></td>
-              <td width="100"><span id="gSt_8_0"></span></td>
-              <td width="100"><span id="lSt_8_0"></span></td>
+                <td width="100"><span id="rSt_8_0"></span></td>
+                <td width="100"><span id="gSt_8_0"></span></td>
+                <td width="100"><span id="lSt_8_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_8_1"></span></td>
@@ -334,7 +341,7 @@
         </div>
       </div>
 
-  <!-- テーブル09 -->
+      <!-- テーブル09 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_9"></span>〜<span id="endTime_9"></span>
@@ -351,9 +358,9 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_9_0"></span></td>
-              <td width="100"><span id="gSt_9_0"></span></td>
-              <td width="100"><span id="lSt_9_0"></span></td>
+                <td width="100"><span id="rSt_9_0"></span></td>
+                <td width="100"><span id="gSt_9_0"></span></td>
+                <td width="100"><span id="lSt_9_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_9_1"></span></td>
@@ -365,7 +372,7 @@
         </div>
       </div>
 
-  <!-- テーブル10 -->
+      <!-- テーブル10 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_10"></span>〜<span id="endTime_10"></span>
@@ -382,9 +389,9 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_10_0"></span></td>
-              <td width="100"><span id="gSt_10_0"></span></td>
-              <td width="100"><span id="lSt_10_0"></span></td>
+                <td width="100"><span id="rSt_10_0"></span></td>
+                <td width="100"><span id="gSt_10_0"></span></td>
+                <td width="100"><span id="lSt_10_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_10_1"></span></td>
@@ -396,7 +403,7 @@
         </div>
       </div>
 
-  <!-- テーブル11 -->
+      <!-- テーブル11 -->
       <div class="row px-3 pt-3">
         <h5>
           <span id="startTime_11"></span>〜<span id="endTime_11"></span>
@@ -413,9 +420,9 @@
             </thead>
             <tbody class="text-sm-center">
               <tr>
-              <td width="100"><span id="rSt_11_0"></span></td>
-              <td width="100"><span id="gSt_11_0"></span></td>
-              <td width="100"><span id="lSt_11_0"></span></td>
+                <td width="100"><span id="rSt_11_0"></span></td>
+                <td width="100"><span id="gSt_11_0"></span></td>
+                <td width="100"><span id="lSt_11_0"></span></td>
               </tr>
               <tr>
                 <td width="100"><span id="rSt_11_1"></span></td>
@@ -430,7 +437,7 @@
     </div> <!-- container_end  -->
   </main>
 
-  <!-- js読み込み -->
+<!-- HTMLの枠組み作成完了後にjsでデータを読み込み -->
   <script type="text/javascript" src="./src/date.js"></script>
   <script type="text/javascript" src="./src/index.js"></script>
 

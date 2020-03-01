@@ -8,7 +8,6 @@ const hour = ("0"+date.getHours()).slice(-2)
 const minute = ("0"+date.getMinutes()).slice(-2)
 const second = ("0"+date.getSeconds()).slice(-2)
 
-
 //日付作成
 const print = year+'年'+month+'月'+day+'日 '+hour+'時'+minute+'分'
 
