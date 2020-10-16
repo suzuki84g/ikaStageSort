@@ -3,7 +3,6 @@ const url = {
   battle: 'https://spla2.yuu26.com/schedule',
   salmon: 'https://spla2.yuu26.com/coop/schedule'
 }
-
 let battleJson;
 
 fetch(url.battle)
